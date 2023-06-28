@@ -1,5 +1,5 @@
 #!/bin/bash
 
-message = "Shell Scripting is Fun!"
+message="Shell Scripting is Fun!"
 
 echo $message
