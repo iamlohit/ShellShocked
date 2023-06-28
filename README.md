@@ -27,5 +27,7 @@ Also​ ​perform​ ​an​ ​ls​ ​command​ ​against​ ​the​ �
 
 ## Exercise​ ​7:
 Modify​ ​the​ ​previous​ ​script​ ​so​ ​that​ ​it​ ​accepts​ ​the​ ​file​ ​or​ ​directory​ ​name​ ​as​ ​an​ ​argument​ ​instead​ ​of
-prompting​ ​the​ ​user​ ​to​ ​enter​ ​it. Exercise​ ​8:
+prompting​ ​the​ ​user​ ​to​ ​enter​ ​it. 
+
+## Exercise​ ​8:
 Modify​ ​the​ ​previous​ ​script​ ​to​ ​accept​ ​an​ ​unlimited​ ​number​ ​of​ ​files​ ​and​ ​directories​ ​as​ ​arguments. Hint:​ ​You'll​ ​want​ ​to​ ​use​ ​a​ ​special​ ​variable.
