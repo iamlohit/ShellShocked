@@ -1,5 +1,6 @@
 # Get ShellShocked with Following Excercises
 
+# Topic: Shell Scripting Basics
 ## Exercise​ ​1:
 Write​ ​a​ ​shell​ ​script​ ​that​ ​prints​ ​"Shell​ ​Scripting​ ​is​ ​Fun!"​ ​to​ ​the​ ​screen. Hint​ ​1:
 Remember​ ​to​ ​make​ ​the​ ​shell​ ​script​ ​executable​ ​with​ ​the​ ​chmod​ ​command. Hint​ ​2:
@@ -32,6 +33,7 @@ prompting​ ​the​ ​user​ ​to​ ​enter​ ​it.
 ## Exercise​ ​8:
 Modify​ ​the​ ​previous​ ​script​ ​to​ ​accept​ ​an​ ​unlimited​ ​number​ ​of​ ​files​ ​and​ ​directories​ ​as​ ​arguments. Hint:​ ​You'll​ ​want​ ​to​ ​use​ ​a​ ​special​ ​variable.
 
+# Topic: Return Codes & Exit Statuses
 ## Exercise 9:
 Write a shell script that displays "This script will exit with a 0 exit status." Be sure that the script does indeed exit with a 0 exit status.
 
@@ -41,6 +43,7 @@ Write a shell script that accepts a file or directory name as an argument. Have 
 ## Exercise 11:
 Write a script that executes the command "cat /etc/shadow". If the command returns a 0 exit status report "Command succeeded" and exit with a 0 exit status. If the command returns a non­zero exit status report "Command failed" and exit with a 1 exit status.
 
+# Topic: Shell Functions
 ## Exercise 12:
 Write a shell script that consists of a function that display the number of files in the present working directory.
 Name this function "file_count" and call it in your script.
@@ -54,7 +57,27 @@ Next have the function display the name of the directory followed by a colon.
 Finally, display the number of files to the screen on the next line.
 Call the function three times. First, on the "/etc" directory, next on the "/var" directory and finally on the "/usr/bin" directory.
 
-Example output:
+### Example output:
 
 /etc:
 85
+
+# Topic: Wilcards
+## Exercise 14:
+Write a shell script that renames all files in the current directory that end in ".jpg" to begin with today's date in the following format: YYYY­MM­DD. For example, if a picture of my cat was in the current directory and today was October 31, 2016 it would change name from "mycat.jpg" to "2016­10­31­mycat.jpg".
+
+Hint: Look at the format options to the date command.
+
+For "extra credit" make sure to gracefully handle instances where there are no ".jpg" files in the current directory. (Hint: Man bash and read the section on the nullglob option.)
+
+### Example output 14:
+
+Please enter a file extension: jpg Please enter a file prefix: (Press ENTER for 2015­08­10). vacation Renaming mycat.jpg to vacation­mycat.jpg.
+
+## Exercise 15:
+Write a script that renames files based on the file extension. The script should prompt the user for a file extension. Next, it should ask the user what prefix to prepend to the file name(s). By default the prefix should be the current date in YYYY­MM­DD format. So, if the user simply presses enter the date will be used. Otherwise, whatever the user entered will be used as the prefix. Next, it should display the original file name and the new name of the file. Finally, it should rename the file.
+
+### Example output 15:
+
+Please enter a file extension: jpg Please enter a file prefix: (Press ENTER for 2015­08­10). Renaming mycat.jpg to 2015­08­10­mycat.jpg.
+
