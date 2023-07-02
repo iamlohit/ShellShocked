@@ -1,5 +1,7 @@
 # Get ShellShocked with Following Excercises
 
+## It's not shell scripting, it's Shell Programming
+
 # Topic: Shell Scripting Basics
 ## Exercise​ ​1:
 Write​ ​a​ ​shell​ ​script​ ​that​ ​prints​ ​"Shell​ ​Scripting​ ​is​ ​Fun!"​ ​to​ ​the​ ​screen. Hint​ ​1:
