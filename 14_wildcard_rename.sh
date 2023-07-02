@@ -2,5 +2,5 @@
 shopt -s nullglob
 for FILE in *.jpg
 do
-    mv $FILE "$(date +%y%m%d)$FILE"
+    mv $FILE "$(date +%Y%m%d)$FILE"
 done
