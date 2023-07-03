@@ -73,18 +73,15 @@ Hint: Look at the format options to the date command.
 For "extra credit" make sure to gracefully handle instances where there are no ".jpg" files in the current directory. (Hint: Man bash and read the section on the nullglob option.)
 
 ### Example output 14:
-
 Please enter a file extension: jpg Please enter a file prefix: (Press ENTER for 2015­08­10). vacation Renaming mycat.jpg to vacation­mycat.jpg.
 
 ## Exercise 15:
 Write a script that renames files based on the file extension. The script should prompt the user for a file extension. Next, it should ask the user what prefix to prepend to the file name(s). By default the prefix should be the current date in YYYY­MM­DD format. So, if the user simply presses enter the date will be used. Otherwise, whatever the user entered will be used as the prefix. Next, it should display the original file name and the new name of the file. Finally, it should rename the file.
 
 ### Example output 15:
-
 Please enter a file extension: jpg Please enter a file prefix: (Press ENTER for 2015­08­10). Renaming mycat.jpg to 2015­08­10­mycat.jpg.
 
 ## Exercise 16:
-
 Create a startup script for an application called sleep­walking­server, which is provided below. The script should be named sleep­walking and accept "start" and "stop" as arguments. If anything other than "start" or "stop" is provided as an argument, display a usage statement: "Usage sleep­walking start|stop" and terminate the script with an exit status of 1.
 
 To start sleep­walking­server, use this command: "/tmp/sleep­walking­server &" To stop sleep­walking­server, use this command: "kill $(cat /tmp/sleep­walking­server.pid)"
@@ -100,3 +97,10 @@ do
   :
 done
 
+## Exercise 17:
+Write a shell script that displays one random number to the screen and also generates a syslog message with that random number. Use the "user" facility and the "info" facility for your messages.
+
+Hint: Use $RANDOM
+
+## Exercise 18:
+Modify the previous script so that it uses a logging function. Additionally tag each syslog message with "randomly" and include the process ID. Generate 3 random numbers.
