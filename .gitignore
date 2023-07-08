@@ -1,0 +1,5 @@
+Dockerfile
+docker-compose.yml
+.docker-volumes/
+tmp
+.DS_Store
