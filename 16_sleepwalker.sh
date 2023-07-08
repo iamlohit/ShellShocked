@@ -2,10 +2,10 @@
 
 case "$1" in
     start)
-        /tmp/sleepwalkingserver &
+        ./tmp/sleep-walking-server &
         ;;
     stop)
-        kill $(cat /tmp/sleepwalkingserver.pid)
+        kill $(cat ./tmp/sleep-walking-server.pid)
         ;;
     *)
         echo "Usage 16_sleepwalking start|stop"
